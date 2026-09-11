@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#d71920">
+<title>Catalogue CGT Lidl DR26</title>
+<style>
+:root{--red:#d71920;--yellow:#ffd400;--ink:#161616;--paper:#f5f1ea;--white:#fff;--muted:#686868;--blue:#1749a8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{text-decoration:none;color:inherit}button,input{font:inherit}
+.top{position:sticky;top:0;z-index:30;background:#111;color:#fff;padding:10px 15px;display:flex;justify-content:space-between;align-items:center}
+.top b{letter-spacing:.08em}.top a{border:1px solid #555;border-radius:30px;padding:7px 11px;font-size:12px;font-weight:900}
+.cover{max-width:1120px;margin:18px auto;padding:0 14px}
+.cover-inner{background:var(--red);color:#fff;border-radius:8px;overflow:hidden;position:relative;box-shadow:0 12px 30px #0002}
+.cover-inner:after{content:"";position:absolute;width:260px;height:260px;border:42px solid var(--yellow);border-radius:50%;right:-140px;top:-115px}
+.cover-content{padding:42px 25px 34px;position:relative;z-index:1}
+.masthead{font-weight:900;font-size:13px;letter-spacing:.13em}
+h1{font-size:clamp(43px,11vw,78px);line-height:.86;margin:15px 0}
+.slogan{font-size:23px;font-weight:900;max-width:720px}
+.subline{font-size:16px;max-width:650px}
+.cover-cta{display:inline-block;background:var(--yellow);color:#111;padding:14px 17px;border-radius:10px;font-weight:900;margin-top:10px}
+.languages{margin-top:18px;font-weight:800;font-size:13px}
+.wrap{max-width:1120px;margin:auto;padding:0 14px}
+section{padding:34px 0}
+.section-title{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:16px}
+h2{font-size:31px;line-height:1;margin:0 0 7px}
+.desc{color:var(--muted);max-width:720px;margin:0}
+.catalog-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.catalog-card{background:#fff;border:1px solid #ddd;border-radius:8px;min-height:155px;padding:18px;position:relative;box-shadow:0 5px 14px #0000000d}
+.catalog-card .num{position:absolute;right:13px;top:12px;font-weight:900;color:#aaa;font-size:12px}
+.catalog-card .ico{font-size:28px}.catalog-card h3{margin:10px 0 5px;font-size:20px}.catalog-card p{margin:0;color:#666;font-size:14px}
+.catalog-card:hover{transform:translateY(-2px);border-color:var(--red)}
+.notice{background:#111;color:#fff;border-radius:8px;padding:22px}
+.notice strong{color:var(--yellow)}
+.fiche-grid{display:grid;grid-template-columns:1fr;gap:12px}
+.fiche{background:#fff;border-radius:8px;border-left:7px solid var(--red);padding:18px;box-shadow:0 5px 14px #0000000d}
+.fiche .label{font-size:11px;font-weight:900;letter-spacing:.08em;color:var(--red)}
+.fiche h3{font-size:22px;margin:8px 0}.fiche p{color:#555;margin:0 0 12px}
+.fiche a{display:inline-block;background:#111;color:#fff;border-radius:7px;padding:9px 11px;font-weight:900;font-size:13px}
+.kiosque{background:#eae5dc;border-radius:8px;padding:22px}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+input{border:1px solid #ccc;border-radius:30px;padding:11px 14px;flex:1;min-width:220px}
+.filter{border:1px solid #bbb;background:#fff;border-radius:30px;padding:10px 13px;font-weight:800}
+.tracts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.tract{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 5px 14px #00000010}
+.tract img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.tract .body{padding:13px}.pill{font-size:10px;background:#eee;border-radius:20px;padding:5px 8px;font-weight:900}
+.tract h3{font-size:17px;line-height:1.08;margin:9px 0 12px}.tract button{background:#111;color:#fff;border:0;border-radius:7px;padding:9px 10px;font-weight:900}
+.people{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.person{background:#fff;border-radius:8px;padding:18px;border:1px solid #ddd}
+.person .people-icon{font-size:27px}.person h3{margin:8px 0 12px}
+.elections{border:2px dashed var(--red);background:#fff;border-radius:8px;padding:20px}
+.elections .soon{font-weight:900;color:var(--red);font-size:11px;letter-spacing:.08em}
+.location{background:var(--blue);color:#fff;border-radius:8px;padding:22px}
+.footer{background:var(--red);color:#fff;text-align:center;padding:38px 18px;margin-top:20px}.footer strong{color:var(--yellow)}
+.guide-content{max-height:75vh;overflow:auto;padding:8px 12px 18px}.guide-content h2{color:var(--red);font-size:20px;margin-top:20px}.guide-content p,.guide-content li{font-size:15px;line-height:1.5}.guide-note{background:var(--yellow);padding:12px;border-radius:9px;font-weight:800}.modal{display:none;position:fixed;inset:0;background:#000d;z-index:80;padding:12px;align-items:center;justify-content:center}.modal.on{display:flex}
+.modal-box{background:#fff;border-radius:8px;max-width:900px;width:100%;padding:10px;position:relative}.modal-box img{width:100%;max-height:82vh;object-fit:contain}
+.close{position:absolute;right:8px;top:8px;width:38px;height:38px;border:0;border-radius:50%;background:var(--red);color:#fff;font-size:22px}
+#modalTitle{font-weight:900;padding:7px 45px 7px 4px}
+@media(min-width:720px){
+.cover{padding:0 22px}.wrap{padding:0 22px}.cover-content{padding:60px 48px}
+.catalog-grid{grid-template-columns:repeat(4,1fr)}.fiche-grid{grid-template-columns:repeat(3,1fr)}
+.tracts{grid-template-columns:repeat(4,1fr)}
+}
+</style>
+
+<style id="v9-styles">
+.v9-home,.v9-section{max-width:1050px;margin:auto}.v9-home{padding:18px 12px 8px}
+.v9-hero{border-radius:24px;padding:28px 20px;background:linear-gradient(135deg,#ffd400 0 56%,#e30613 56%);box-shadow:0 10px 28px #0002;color:#111}
+.v9-badge{display:inline-block;background:#111;color:#fff;border-radius:999px;padding:7px 12px;font-weight:800}.v9-hero h1{font-size:clamp(2rem,8vw,4rem);line-height:.95;margin:18px 0 12px;font-weight:950}.v9-hero h1 span{color:#fff;text-shadow:2px 2px #111}
+.v9-slogan{font-size:1.25rem;font-weight:900}.v9-intro{max-width:720px;background:#fffdf0e8;padding:13px 15px;border-radius:16px;line-height:1.5}
+.v9-signpost{margin:14px 0;padding:17px;border:3px solid #111;border-radius:18px;background:#fff;text-align:center;box-shadow:5px 5px #111}.v9-signpost strong,.v9-signpost small{display:block}.v9-signpost strong{font-size:1.5rem;margin:5px}
+.v9-section{padding:18px 12px}.v9-title{font-size:1.5rem;font-weight:950;border-left:8px solid #e30613;padding-left:10px;margin-bottom:12px}
+.v9-grid,.v9-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}.v9-grid a{display:flex;flex-direction:column;gap:5px;text-decoration:none;color:inherit;border:2px solid #111;border-radius:16px;padding:15px;background:#fff;box-shadow:3px 3px #111}.v9-grid span,.v9-cards span{font-size:.86rem;opacity:.75}
+.v9-check{background:#111;color:#fff;border-radius:24px;margin:12px auto;padding:22px 12px}.v9-check .v9-title{border-left-color:#ffd400}.v9-cards article{background:#fff;color:#111;border-radius:16px;padding:15px;min-height:115px;display:flex;flex-direction:column;gap:9px}.v9-motto{text-align:center;font-weight:900;margin-top:14px}
+</style>
+<style id="v9plus-styles">
+.v9-elus-photo{margin-top:14px;border-radius:18px;overflow:hidden;border:3px solid #111;box-shadow:4px 4px #111;background:#fff}
+.v9-elus-photo img{display:block;width:100%;height:auto}
+.v9-sources{margin-top:14px;padding:12px;border-radius:14px;background:#fff;color:#111;font-size:.84rem;line-height:1.45}
+</style>
+<style>
+.language-bar{direction:ltr}
+[lang="ar"], .arabic{direction:rtl;text-align:right}
+</style>
+</head>
+<body>
+<style>
+.martine-final{margin:28px 0;padding:22px;border-radius:24px;background:linear-gradient(135deg,#111 0%,#1b1b1b 70%,#2a0909 100%);color:#fff;box-shadow:0 12px 30px rgba(0,0,0,.18);border:2px solid #e30613}
+.martine-kicker{font-weight:900;letter-spacing:.04em;color:#ffd500;font-size:1.05rem;margin-bottom:12px}
+.martine-card{display:flex;gap:16px;align-items:center;padding:16px;border-radius:18px;background:#ffd500;color:#111}
+.martine-avatar{font-size:2.3rem;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#fff}
+.martine-name{font-weight:1000;font-size:1.15rem}
+.martine-title{font-weight:1000;font-size:1.35rem}
+.martine-quote{margin:7px 0 0;font-weight:650;line-height:1.35}
+.martine-steps{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:16px 0 10px}
+.martine-steps span{background:#fff;color:#111;border-radius:999px;padding:8px 11px;font-weight:800;font-size:.9rem}
+.martine-steps b{color:#ffd500}
+.martine-footer{margin:0;color:#eee}
+@media(max-width:600px){.martine-card{align-items:flex-start}.martine-title{font-size:1.15rem}.martine-steps b{display:none}}
+</style>
+
+<section class="martine-final" id="martine">
+  <div class="martine-kicker">🗣️ ON T’A DIT… ?</div>
+  <div class="martine-card">
+    <div class="martine-avatar">👩</div>
+    <div>
+      <div class="martine-name">MARTINE</div>
+      <div class="martine-title">🔎 VÉRIFIE AVEC TOI</div>
+      <p class="martine-quote">« On t’a dit quelque chose ? On regarde ensemble ce que disent vraiment les textes. »</p>
+    </div>
+  </div>
+  <div class="martine-steps">
+    <span>🗣️ On t’a dit</span><b>→</b><span>🔎 On vérifie</span><b>→</b><span>💡 On comprend</span><b>→</b><span>✊ On agit</span>
+  </div>
+  <p class="martine-footer">Pas de rumeur. Pas de « on m’a dit ». <strong>Les textes d’abord.</strong></p>
+</section>
+
+<section id="v9-welcome" class="v9-home">
+<div class="v9-hero">
+<div class="v9-badge">🚩 CGT LIDL DR26</div>
+<h1>BIENVENUE À LIDL<br><span>CHANTELOUP-LES-VIGNES</span></h1>
+<p class="v9-slogan">À LA CGT, C’EST D’ABORD VOUS.</p>
+<p class="v9-intro">Bienvenue sur votre espace d’information CGT. Ici, pas de blabla : des informations concrètes pour comprendre vos <b>droits</b>, vos <b>devoirs</b> et les règles qui s’appliquent au travail.</p>
+<div>🇫🇷 Français • 🇵🇹 Português • 🇪🇸 Español • 🇵🇱 Polski • 🇸🇦 العربية</div>
+</div>
+<div class="v9-signpost"><b>🧐 On t’a dit quelque chose au travail ?</b><strong>🔎 ON VÉRIFIE !</strong><small>⚖️ Le texte • 💡 En clair • 👉 Que faire ?</small></div>
+</section>
+
+<section id="v9-nous" class="v9-section">
+<div class="v9-title">👥 QUI SOMMES-NOUS ?</div>
+<p>Des élus et représentants CGT de votre site, là pour <b>écouter, informer et accompagner</b>.</p>
+<p>📌 Voici la présentation de l’équipe CGT et les coordonnées pour nous joindre.</p>
+<div class="v9-elus-photo"><img src="assets/qui_sommes_nous_elus.jpeg" alt="Présentation des élus CGT Lidl DR26 et leurs coordonnées"></div>
+</section>
+
+<section id="v9-catalogue" class="v9-section">
+<div class="v9-title">📚 VOTRE CATALOGUE</div>
+<div class="v9-grid">
+<a href="#droits">⚖️ <b>MES DROITS</b><span>Les règles à connaître</span></a>
+<a href="#devoirs">📋 <b>MES DEVOIRS</b><span>Ce que chacun doit respecter</span></a>
+<a href="#v9-verifie">🔎 <b>ON T’A DIT ? ON VÉRIFIE !</b><span>Lois, convention, accords</span></a>
+<a href="#securite">🦺 <b>SANTÉ &amp; SÉCURITÉ</b><span>Prévenir et agir</span></a>
+<a href="#kiosque">📰 <b>KIOSQUE CGT</b><span>Les tracts et infos</span></a>
+<a href="#adhesion">🤝 <b>ADHÉRER</b><span>Pourquoi et comment</span></a>
+<a href="#contacts">📞 <b>CONTACTS &amp; AIDE</b><span>Besoin d’un coup de main ?</span></a>
+<a href="#elections">🗳️ <b>ÉLECTIONS</b><span>À compléter au fil de l’eau</span></a>
+</div>
+</section>
+
+<section id="v9-verifie" class="v9-section v9-check">
+<div class="v9-title">🔥 ON T’A DIT… ? ON VÉRIFIE !</div>
+<p>Des fiches courtes pour ne plus rester dans le flou. Chaque fiche doit distinguer la loi, la convention collective et les accords Lidl lorsqu’ils s’appliquent.</p>
+<div class="v9-cards">
+<article><b>🩺 « Après mon arrêt, visite de reprise obligatoire ? »</b><span>⚖️ On vérifie selon l’origine et la durée de l’arrêt, le congé concerné et les règles médicales applicables.</span></article>
+<article><b>💶 « En arrêt maladie, comment je suis payé ? »</b><span>🔎 IJ de Sécurité sociale + éventuel complément employeur : conditions, carence, ancienneté et dispositions plus favorables à vérifier.</span></article>
+<article><b>🦺 « Accident du travail : même indemnisation qu’une maladie ? »</b><span>⚖️ Non, les règles d’indemnisation et de carence ne sont pas les mêmes. On vérifie aussi les démarches et la reprise.</span></article>
+<article><b>🎁 « Le 13e mois en novembre : malade = forcément 0 € ? »</b><span>🔎 Attention : le 13e mois dépend du texte qui l’institue et de ses conditions. Pour Lidl, on vérifiera l’accord applicable et les conditions de présence/absence avant de conclure.</span></article>
+<article><b>🚪 « Je démissionne : je n’ai rien du tout ? »</b><span>❌ Faux de façon générale. La démission met fin au contrat, mais le solde de tout compte peut comprendre notamment salaire dû et indemnité compensatrice de congés payés. Le 13e mois doit être vérifié selon ses règles propres.</span></article>
+<article><b>📄 « Je démissionne : quel préavis ? »</b><span>⚖️ La durée dépend notamment du texte applicable, du statut et de l’ancienneté. On vérifie avant de signer.</span></article>
+<article><b>🏖️ « Mes congés peuvent changer au dernier moment ? »</b><span>⚖️ Il existe un délai de modification et des exceptions. On vérifie les circonstances et les règles applicables.</span></article>
+<article><b>🕐 « 21h → 7h : j’ai assez de repos ? »</b><span>⚖️ Le principe légal est de 11 heures consécutives de repos quotidien, avec exceptions prévues par les textes.</span></article>
+<article><b>💰 « Une heure supplémentaire, c’est juste une heure de plus ? »</b><span>🔎 Décompte, majoration ou repos compensateur : on vérifie ce qui s’applique.</span></article>
+<article><b>💳 « Je peux demander une partie de mon salaire avant la fin du mois ? »</b><span>💡 L’acompte sur salaire et l’avance sur salaire ne sont pas la même chose. Pour un salarié mensualisé, l’acompte sur travail déjà effectué peut être demandé dans la 2e quinzaine du mois.</span></article>
+<article><b>🚨 « On m’a dit : c’est obligatoire. »</b><span>🔎 Question simple : obligatoire selon quel texte ? Code du travail, convention, accord ou contrat ?</span></article>
+<article><b>🛑 « Je ne viens pas travailler, je suis automatiquement licencié ? »</b><span>⚖️ Une absence injustifiée peut avoir des conséquences disciplinaires. L’abandon volontaire de poste obéit à des règles particulières : on vérifie avant de tirer une conclusion.</span></article>
+</div>
+<div class="v9-motto">❌ Pas de rumeur. ❌ Pas de « on m’a dit ». ✅ Les textes d’abord.</div>
+<div class="v9-sources"><b>📚 Sources de référence</b><br>Code du travail • Légifrance • Service-Public • Convention collective IDCC 2216 • Accords d’entreprise Lidl applicables.</div>
+</section>
+
+<div class="top"><b>CGT • LIDL DR26</b><a href="#sommaire">SOMMAIRE ↓</a></div>
+
+<div class="cover">
+  <div class="cover-inner">
+    <div class="cover-content">
+      <div class="masthead">CHANTELOUP-LES-VIGNES • CATALOGUE D’INFORMATION</div>
+      <h1>BIENVENUE<br>À LA CGT<br>LIDL DR26</h1>
+      <div class="slogan">À la CGT, c’est d’abord vous.</div>
+      <p class="subline">Vos droits. Vos devoirs. Vos questions. Des réponses claires pour comprendre ce qui vous concerne au travail.</p>
+      <a class="cover-cta" href="#sommaire">OUVRIR LE CATALOGUE →</a>
+      <div class="languages">🇫🇷 Français • 🇵🇹 Português • 🇪🇸 Español • 🇵🇱 Polski</div>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+
+<section id="equipe">
+  <div class="section-title">
+    <div>
+      <h2>👥 QUI SOMMES-NOUS ?</h2>
+      <p class="desc">Des élus CSE choisis par vous, présents pour vous écouter, vous informer et vous accompagner.</p>
+    </div>
+  </div>
+
+  <div class="notice" style="margin-bottom:14px">
+    <strong>ÉLUS CSE • ÉLUS PAR VOUS</strong>
+    <p>La CGT, ce sont aussi des collègues de terrain. Des femmes et des hommes qui connaissent le travail au quotidien et qui peuvent être sollicités lorsqu’une question ou une difficulté se présente.</p>
+  </div>
+
+  <div class="people">
+    <div class="person">
+      <div class="people-icon">👷‍♂️👷‍♀️</div>
+      <h3>🏭 ENTREPÔTS</h3>
+      <p><strong>Amad</strong> — Agent de maîtrise</p>
+      <p><strong>Ibrahim</strong> — Agent de maîtrise</p>
+      <p><strong>Le reste de l’équipe</strong> — Opérateurs logistiques</p>
+    </div>
+    <div class="person">
+      <div class="people-icon">👩‍💼👨‍💼</div>
+      <h3>🛒 SUPERMARCHÉ</h3>
+      <p><strong>Maryse</strong> — Cadre</p>
+      <p><strong>Patricia</strong> — Agent de maîtrise</p>
+      <p><strong>Péguy</strong> — Agent de maîtrise</p>
+      <p><strong>Leantine</strong> — CCA</p>
+    </div>
+  </div>
+</section>
+
+<section id="lieu">
+  <div class="section-title">
+    <div>
+      <h2>📍 L’ENTREPÔT / DR26</h2>
+      <p class="desc">L’adresse et le plan pour nous retrouver facilement.</p>
+    </div>
+  </div>
+  <div class="location">
+    <h2>LIDL DR26</h2>
+    <p><strong>11 rue Henri-Becquerel<br>78570 Chanteloup-les-Vignes</strong></p>
+    <p>📍 ZAC des Cettons 2 / Écoparc des Cettons</p>
+    <a class="cover-cta" style="color:#111" href="#plan">VOIR LE PLAN ↓</a>
+  </div>
+  <div id="plan" style="background:#fff;margin-top:12px;padding:12px;border-radius:8px">
+    <img src="plan_schematique_lidl_dr26.png" alt="Plan schématique Lidl DR26" style="width:100%;max-height:520px;object-fit:contain;display:block">
+  </div>
+</section>
+
+<section id="reseaux">
+  <div class="section-title">
+    <div>
+      <h2>📱 RETROUVEZ-NOUS AUSSI</h2>
+      <p class="desc">L’actualité CGT DR26 continue aussi sur les réseaux.</p>
+    </div>
+  </div>
+  <div class="catalog-grid">
+    <a class="catalog-card" href="https://www.facebook.com/cgtlidldr26" target="_blank" rel="noopener">
+      <div class="ico">🔵</div><h3>Facebook</h3><p><strong>CGT Lidl DR26</strong><br>@cgtlidldr26</p>
+    </a>
+    <a class="catalog-card" href="https://www.tiktok.com/@cgtlidldr26" target="_blank" rel="noopener">
+      <div class="ico">🎵</div><h3>TikTok</h3><p><strong>CGT Lidl DR26</strong><br>@cgtlidldr26</p>
+    </a>
+    <a class="catalog-card" href="https://www.instagram.com/cgtlidldr26/" target="_blank" rel="noopener">
+      <div class="ico">📸</div><h3>Instagram</h3><p><strong>CGT Lidl DR26</strong><br>@cgtlidldr26</p>
+    </a>
+  </div>
+</section>
+
+<section id="sommaire">
+  <div class="section-title">
+    <div><h2>📖 SOMMAIRE</h2><p class="desc">Comme un catalogue : une rubrique, un sujet, une information. Tu vas directement à ce qui t’intéresse.</p></div>
+  </div>
+  <div class="catalog-grid">
+    <a class="catalog-card" href="#droits"><span class="num">01</span><div class="ico">⚖️</div><h3>Mes droits</h3><p>Salaire, congés, ancienneté, horaires, contrat…</p></a>
+    <a class="catalog-card" href="#devoirs"><span class="num">02</span><div class="ico">📋</div><h3>Mes devoirs</h3><p>Règles, consignes, comportement professionnel…</p></a>
+    <a class="catalog-card" href="#verifier"><span class="num">03</span><div class="ico">🔎</div><h3>Tu doutes ? Vérifie</h3><p>Ce que dit la loi et la convention collective.</p></a>
+    <a class="catalog-card" href="#kiosque"><span class="num">04</span><div class="ico">📰</div><h3>Kiosque CGT</h3><p>Nos tracts et documents, classés par thème.</p></a>
+    <a class="catalog-card" href="#sante"><span class="num">05</span><div class="ico">🦺</div><h3>Santé & sécurité</h3><p>Prévention, risques, accidents et protection.</p></a>
+    <a class="catalog-card" href="#equipe"><span class="num">06</span><div class="ico">👥</div><h3>Qui sommes-nous ?</h3><p>Entrepôts et supermarché, sans photos.</p></a>
+    <a class="catalog-card" href="#elections"><span class="num">07</span><div class="ico">🗳️</div><h3>Élections</h3><p>Une rubrique qui sera enrichie plus tard.</p></a>
+    <a class="catalog-card" href="#adhesion"><span class="num">08</span><div class="ico">🤝</div><h3>Adhérer</h3><p>Le bulletin et les modalités d’adhésion.</p></a>
+    <a class="catalog-card" href="#contact"><span class="num">09</span><div class="ico">📞</div><h3>Contacts & aide</h3><p>CGT, Union départementale, prud’hommes.</p></a>
+  </div>
+</section>
+
+<section>
+  <div class="notice">
+    <strong>🎯 NOTRE OBJECTIF</strong>
+    <p>Informer les salariés de leurs <strong>droits ET de leurs devoirs</strong>. Pas de promesses, pas de jargon inutile : on explique, on vérifie les textes et on donne les bons réflexes.</p>
+  </div>
+</section>
+
+<section id="droits">
+  <div class="section-title"><div><h2>⚖️ CATALOGUE DES DROITS</h2><p class="desc">Les grands thèmes à connaître pour mieux comprendre sa situation.</p></div></div>
+  <div class="catalog-grid">
+    <a class="catalog-card" href="#verifier"><div class="ico">💰</div><h3>Salaire & primes</h3><p>Comprendre les éléments de rémunération.</p></a>
+    <a class="catalog-card" href="#verifier"><div class="ico">📅</div><h3>Planning & horaires</h3><p>Comprendre les règles applicables.</p></a>
+    <a class="catalog-card" href="#verifier"><div class="ico">🏖️</div><h3>Congés & repos</h3><p>Les points à vérifier selon votre situation.</p></a>
+    <a class="catalog-card" href="#verifier"><div class="ico">📄</div><h3>Contrat de travail</h3><p>Ce qu’il faut lire avant de signer.</p></a>
+  </div>
+</section>
+
+<section id="devoirs">
+  <div class="section-title"><div><h2>📋 ET MES DEVOIRS ?</h2><p class="desc">Connaître ses droits, c’est aussi connaître les règles que chacun doit respecter.</p></div></div>
+  <div class="catalog-grid">
+    <div class="catalog-card"><div class="ico">✅</div><h3>Respecter les consignes</h3><p>Notamment les consignes de sécurité et les règles de travail.</p></div>
+    <div class="catalog-card"><div class="ico">⏰</div><h3>Respecter les horaires</h3><p>Présence et ponctualité font partie des obligations professionnelles.</p></div>
+    <div class="catalog-card"><div class="ico">🤝</div><h3>Respecter les collègues</h3><p>Un comportement professionnel et respectueux est l’affaire de tous.</p></div>
+    <div class="catalog-card"><div class="ico">🦺</div><h3>Prendre soin de la sécurité</h3><p>Signaler les situations dangereuses et respecter les mesures de prévention.</p></div>
+  </div>
+</section>
+
+<section id="verifier">
+  <div class="section-title"><div><h2>🔎 TU DOUTES ? ON VÉRIFIE !</h2><p class="desc">Des fiches simples pour éclairer les salariés : texte applicable, explication et réflexe à avoir.</p></div></div>
+  <div class="fiche-grid">
+    <article class="fiche"><div class="label">FICHE 01 • DROIT</div><h3>Tu doutes ? Que dit la loi ?</h3><p>Comment distinguer Code du travail, convention collective, accord d’entreprise et contrat.</p><button onclick="openGuide(1)">OUVRIR LA FICHE →</button></article>
+    <article class="fiche"><div class="label">FICHE 02 • HORAIRES</div><h3>Planning : que prévoit la convention ?</h3><p>Les bons réflexes pour comprendre un planning ou un changement d’horaire.</p><button onclick="openGuide(2)">OUVRIR LA FICHE →</button></article>
+    <article class="fiche"><div class="label">FICHE 03 • CONTRAT</div><h3>Avant de signer : vérifie</h3><p>Les éléments à regarder avant de signer un document qui modifie votre situation.</p><button onclick="openGuide(3)">OUVRIR LA FICHE →</button></article>
+  </div>
+</section>
+
+<section id="sante">
+  <div class="section-title"><div><h2>🦺 SANTÉ & SÉCURITÉ</h2><p class="desc">Parce qu’aucune information sur les droits n’a de sens si la santé et la sécurité passent après.</p></div></div>
+  <div class="catalog-grid">
+    <div class="catalog-card"><div class="ico">⚠️</div><h3>Prévention</h3><p>Identifier les risques et les signaler.</p></div>
+    <div class="catalog-card"><div class="ico">🩹</div><h3>Accident / incident</h3><p>Comprendre les bons réflexes et les démarches.</p></div>
+    <div class="catalog-card"><div class="ico">🧠</div><h3>Conditions de travail</h3><p>Charge, organisation, fatigue et risques professionnels.</p></div>
+    <div class="catalog-card"><div class="ico">📣</div><h3>Un problème ?</h3><p>Ne restez pas seul : demandez conseil.</p></div>
+  </div>
+</section>
+
+<section id="kiosque">
+  <div class="kiosque">
+    <div class="section-title"><div><h2>📰 KIOSQUE CGT</h2><p class="desc">Les tracts sont ici, comme des pages du catalogue. De nouveaux documents pourront être ajoutés au fil de l’eau.</p></div></div>
+    <div class="tools">
+      <input id="search" placeholder="🔎 Rechercher un tract…">
+      <button class="filter" data-filter="all">Tout</button>
+      <button class="filter" data-filter="Mes droits">Mes droits</button>
+      <button class="filter" data-filter="Santé & sécurité">Santé & sécurité</button>
+      <button class="filter" data-filter="Vie au travail">Vie au travail</button>
+      <button class="filter" data-filter="Accompagnement">Accompagnement</button>
+    </div>
+    <div class="tracts"><article class="tract" data-title="c’est la rentrée !" data-cat="Vie au travail"><img src="assets/IMG_8818.jpeg" alt=""><div class="body"><span class="pill">Vie au travail</span><h3>C’est la rentrée !</h3><button onclick="openTract('assets/IMG_8818.jpeg','C’est la rentrée !')">LIRE →</button></div></article><article class="tract" data-title="rentrée scolaire" data-cat="Vie au travail"><img src="assets/IMG_8810.jpeg" alt=""><div class="body"><span class="pill">Vie au travail</span><h3>Rentrée scolaire</h3><button onclick="openTract('assets/IMG_8810.jpeg','Rentrée scolaire')">LIRE →</button></div></article><article class="tract" data-title="point info-conseil" data-cat="Accompagnement"><img src="assets/IMG_8812.jpeg" alt=""><div class="body"><span class="pill">Accompagnement</span><h3>Point Info-Conseil</h3><button onclick="openTract('assets/IMG_8812.jpeg','Point Info-Conseil')">LIRE →</button></div></article><article class="tract" data-title="rcc : avant de signer, informez-vous !" data-cat="Mes droits"><img src="assets/IMG_8811.jpeg" alt=""><div class="body"><span class="pill">Mes droits</span><h3>RCC : avant de signer, informez-vous !</h3><button onclick="openTract('assets/IMG_8811.jpeg','RCC : avant de signer, informez-vous !')">LIRE →</button></div></article><article class="tract" data-title="5 clauses de votre contrat qui peuvent tout changer" data-cat="Mes droits"><img src="assets/IMG_8808.jpeg" alt=""><div class="body"><span class="pill">Mes droits</span><h3>5 clauses de votre contrat qui peuvent tout changer</h3><button onclick="openTract('assets/IMG_8808.jpeg','5 clauses de votre contrat qui peuvent tout changer')">LIRE →</button></div></article><article class="tract" data-title="cadres au forfait jours : vos droits sur les jours fériés" data-cat="Mes droits"><img src="assets/IMG_8809.jpeg" alt=""><div class="body"><span class="pill">Mes droits</span><h3>Cadres au forfait jours : vos droits sur les jours fériés</h3><button onclick="openTract('assets/IMG_8809.jpeg','Cadres au forfait jours : vos droits sur les jours fériés')">LIRE →</button></div></article><article class="tract" data-title="incendies — soutien aux victimes et aux secours" data-cat="Santé & sécurité"><img src="assets/IMG_8805(1).jpeg" alt=""><div class="body"><span class="pill">Santé & sécurité</span><h3>Incendies — soutien aux victimes et aux secours</h3><button onclick="openTract('assets/IMG_8805(1).jpeg','Incendies — soutien aux victimes et aux secours')">LIRE →</button></div></article><article class="tract" data-title="rétrogradation à la demande du salarié" data-cat="Mes droits"><img src="assets/IMG_8815.jpeg" alt=""><div class="body"><span class="pill">Mes droits</span><h3>Rétrogradation à la demande du salarié</h3><button onclick="openTract('assets/IMG_8815.jpeg','Rétrogradation à la demande du salarié')">LIRE →</button></div></article><article class="tract" data-title="jours supplémentaires liés à l’ancienneté" data-cat="Mes droits"><img src="assets/IMG_8804(1).jpeg" alt=""><div class="body"><span class="pill">Mes droits</span><h3>Jours supplémentaires liés à l’ancienneté</h3><button onclick="openTract('assets/IMG_8804(1).jpeg','Jours supplémentaires liés à l’ancienneté')">LIRE →</button></div></article><article class="tract" data-title="changement d’horaire : quels sont vos droits ?" data-cat="Mes droits"><img src="assets/IMG_8674(1).jpeg" alt=""><div class="body"><span class="pill">Mes droits</span><h3>Changement d’horaire : quels sont vos droits ?</h3><button onclick="openTract('assets/IMG_8674(1).jpeg','Changement d’horaire : quels sont vos droits ?')">LIRE →</button></div></article></div>
+  </div>
+</section>
+
+
+<section id="reseaux">
+  <div class="section-title"><div><h2>📱 RETROUVEZ-NOUS AUSSI</h2><p class="desc">L’actualité CGT DR26 continue aussi sur les réseaux.</p></div></div>
+  <div class="catalog-grid">
+    <a class="catalog-card" href="https://www.facebook.com/cgtlidldr26" target="_blank" rel="noopener"><div class="ico">🔵</div><h3>Facebook</h3><p><strong>CGT Lidl DR26</strong><br>@cgtlidldr26</p></a>
+    <a class="catalog-card" href="https://www.tiktok.com/@cgtlidldr26" target="_blank" rel="noopener"><div class="ico">🎵</div><h3>TikTok</h3><p><strong>CGT Lidl DR26</strong><br>@cgtlidldr26</p></a>
+    <a class="catalog-card" href="https://www.instagram.com/cgtlidldr26/" target="_blank" rel="noopener"><div class="ico">📸</div><h3>Instagram</h3><p><strong>CGT Lidl DR26</strong><br>@cgtlidldr26</p></a>
+  </div>
+</section>
+
+<section id="adhesion">
+  <div class="section-title">
+    <div>
+      <h2>🤝 VOUS SOUHAITEZ ADHÉRER ?</h2>
+      <p class="desc">La CGT, c’est aussi des salariés qui choisissent de se regrouper pour être informés, défendus et acteurs de leur travail.</p>
+    </div>
+  </div>
+  <div class="notice">
+    <strong>À LA CGT, C’EST D’ABORD VOUS.</strong>
+    <p>Vous voulez adhérer ? Rien de compliqué : téléchargez le bulletin, complétez-le et remettez-le à un représentant CGT. Pour les modalités de cotisation et les questions pratiques, nous vous renseignons directement.</p>
+    <a class="cover-cta" style="color:#111" href="adhesion/bulletin_adhesion_cgt_lidl_dr26.pdf">📄 TÉLÉCHARGER LE BULLETIN D’ADHÉSION</a>
+  </div>
+</section>
+
+<section id="elections">
+  <div class="elections"><div class="soon">🗳️ RUBRIQUE PRÉPARÉE — À ENRICHIR PLUS TARD</div>
+    <h2>Élections professionnelles</h2>
+    <p>Les tracts élections seront ajoutés <strong>au fil de l’eau</strong>. Cette rubrique est déjà prévue dans le catalogue.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-title"><div><h2>📞 CONTACTS & AIDE</h2><p class="desc">Pour une question, un doute ou une situation qui nécessite un accompagnement.</p></div></div>
+  <div class="catalog-grid">
+    <a class="catalog-card" href="#equipe"><div class="ico">🤝</div><h3>Vos représentants</h3><p>Retrouvez l’équipe par secteur.</p></a>
+    <div class="catalog-card"><div class="ico">🏛️</div><h3>Union départementale</h3><p>Ressources et accompagnement à compléter dans la version finale.</p></div>
+    <div class="catalog-card"><div class="ico">⚖️</div><h3>Prud’hommes</h3><p>Informations utiles et orientation à compléter.</p></div>
+    <div class="catalog-card"><div class="ico">📱</div><h3>Les numéros CGT</h3><p>Les coordonnées déjà validées seront conservées.</p></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <h2>À LA CGT, C’EST D’ABORD VOUS.</h2>
+  <p>Informer • Éclairer • Accompagner • Agir</p>
+  <p><strong>SCANNE. VÉRIFIE. COMPRENDS. AGIS.</strong></p>
+</footer>
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="close" onclick="closeModal()">×</button>
+    <div id="modalTitle"></div>
+    <div id="guideContent" class="guide-content" style="display:none"></div>
+    <img id="modalImg" alt="">
+  </div>
+</div>
+<script>
+function openTract(src,title){
+  document.getElementById('modalImg').style.display='block';
+  document.getElementById('guideContent').style.display='none';
+  document.getElementById('modalImg').src=src;
+  document.getElementById('modalTitle').textContent=title;
+  document.getElementById('modal').classList.add('on');
+}
+function openGuide(n){
+  const data={
+   1:['FICHE 01 • DROIT','Tu doutes ? Que dit la loi ?',`
+    <p>Au travail, on entend parfois : « c’est obligatoire », « c’est la procédure » ou « tu n’as pas le choix ».</p>
+    <p><strong>Avant de conclure, on vérifie le texte qui s’applique réellement.</strong></p>
+    <h2>Quels textes regarder ?</h2><ul><li>Le Code du travail</li><li>La convention collective applicable</li><li>Les accords d’entreprise</li><li>Le contrat de travail</li></ul>
+    <h2>Pourquoi c’est important ?</h2><p>La réponse peut dépendre de la situation du salarié et des textes applicables.</p>
+    <div class="guide-note">Question → texte applicable → explication → vérification de votre situation.</div>
+    <p><small>Convention collective nationale du commerce de détail et de gros à prédominance alimentaire — IDCC 2216. Source : Légifrance.</small></p>`],
+   2:['FICHE 02 • HORAIRES','Planning : que prévoit la convention ?',`
+    <p>Un changement de planning mérite d’être regardé précisément : date de communication, nature du changement et règles applicables.</p>
+    <h2>Ce que prévoit la convention</h2><p>Pour les salariés relevant de la convention collective IDCC 2216, l’article 6.2.1 prévoit notamment que les horaires de travail sont affichés par l’entreprise <strong>deux semaines à l’avance</strong>, avec des dispositions concernant les modifications en cas de circonstances imprévues.</p>
+    <h2>Le bon réflexe</h2><ul><li>Garder une copie ou une photo du planning.</li><li>Noter quand il a été communiqué ou modifié.</li><li>Demander ce qui justifie la modification.</li><li>Faire vérifier votre situation si vous avez un doute.</li></ul>
+    <p><small>Source : Légifrance — convention collective IDCC 2216, article 6.2.1.</small></p>`],
+   3:['FICHE 03 • CONTRAT','Avant de signer : vérifie',`
+    <p>Une signature peut avoir des conséquences. <strong>Avant de signer, prenez le temps de comprendre.</strong></p>
+    <h2>Les points à regarder</h2><ul><li>Intitulé et classification du poste</li><li>Durée du travail</li><li>Rémunération</li><li>Lieu de travail</li><li>Clauses particulières</li><li>Références aux accords collectifs</li></ul>
+    <h2>Vous ne comprenez pas un point ?</h2><p>Demandez des explications et, si nécessaire, faites relire le document avant de vous engager.</p>
+    <div class="guide-note">Pas de « signe et on verra après ». D’abord comprendre. Ensuite décider.</div>`]
+  };
+  const d=data[n];
+  document.getElementById('modalImg').style.display='none';
+  document.getElementById('modalTitle').textContent=d[0]+' — '+d[1];
+  document.getElementById('guideContent').innerHTML=d[2];
+  document.getElementById('guideContent').style.display='block';
+  document.getElementById('modal').classList.add('on');
+}
+function closeModal(){document.getElementById('modal').classList.remove('on')}
+function closeTract(){closeModal()}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()})
+const cards=[...document.querySelectorAll('.tract')];
+document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{const f=b.dataset.filter;cards.forEach(c=>c.style.display=(f==='all'||c.dataset.cat===f)?'':'none')});
+document.getElementById('search').oninput=e=>{const q=e.target.value.toLowerCase();cards.forEach(c=>c.style.display=c.dataset.title.includes(q)?'':'none')};
+</script>
+</body></html>
